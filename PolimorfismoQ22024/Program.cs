@@ -22,3 +22,28 @@ foreach (Edificio e in edificioLista)
     e.Vender();
 }
 Console.WriteLine("********** Fin Lista de Edificios **********");
+
+//Polimorfismo mediante herencia y sobrecarga
+Console.WriteLine("\n\n********** Objeto Casa **********");
+Casa casa = new Casa();
+casa.TipoInmueble = "Apartamento";
+casa.Precio = 100000;
+casa.Ubicacion = "SPS";
+casa.AreaTerreno = 50;
+casa.Vender();
+Console.WriteLine("********** Fin Objeto Casa **********");
+
+Console.WriteLine("\n\n********** Objeto Departamento **********");
+Departamento depto = new Departamento(75000);
+depto.TipoInmueble = "Departamento Fino";
+depto.Ubicacion = "SPS";
+depto.AreaTerreno = 50;
+depto.Vender();
+Console.WriteLine("********** Fin Objeto Departamento **********");
+
+Console.WriteLine("\n\n********** Objeto Terreno **********");
+Terreno terreno = new Terreno("Terreno", 75000, "Santa Barbara", 100);
+terreno.Vender();
+terreno.Vender("Roger");
+terreno.Vender("Roger", 50000);
+terreno.Vender(50000);
