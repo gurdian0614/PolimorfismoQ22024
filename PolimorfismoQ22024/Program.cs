@@ -1,6 +1,7 @@
 ﻿
 using PolimorfismoQ22024;
 
+// Polimorfismo mediante Listas
 List<Edificio> edificioLista = new List<Edificio>();
 string opcion = "";
 do
